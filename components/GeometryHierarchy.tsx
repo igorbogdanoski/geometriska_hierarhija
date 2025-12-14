@@ -96,8 +96,8 @@ const GeometryHierarchy = () => {
         perimeter: 'L = 2(a + b)'
       },
       realWorld: {
-        // Kite flying
-        img: "https://images.unsplash.com/photo-1534685157159-d83279aa7601?auto=format&fit=crop&w=400&q=80",
+        // Kite flying - Updated URL
+        img: "https://images.unsplash.com/photo-1596727147705-54a9d0c2094c?auto=format&fit=crop&w=400&q=80",
         label: "Змеј за летање"
       },
       x: 20, y: 30,
@@ -124,8 +124,8 @@ const GeometryHierarchy = () => {
         perimeter: 'L = a + b + c + d'
       },
       realWorld: {
-        // Handbag shape
-        img: "https://images.unsplash.com/photo-1590874103328-3351a9f1a21e?auto=format&fit=crop&w=400&q=80",
+        // Handbag shape - Updated URL
+        img: "https://images.unsplash.com/photo-1566150905458-1bf1fc113f0d?auto=format&fit=crop&w=400&q=80",
         label: "Женска чанта"
       },
       x: 80, y: 30,
@@ -234,8 +234,8 @@ const GeometryHierarchy = () => {
         perimeter: 'L = 2(a + b)'
       },
       realWorld: {
-        // Door
-        img: "https://images.unsplash.com/photo-1489171027722-cab6e80ceafd?auto=format&fit=crop&w=400&q=80",
+        // Door - Updated URL
+        img: "https://images.unsplash.com/photo-1517672651691-24622a91b550?auto=format&fit=crop&w=400&q=80",
         label: "Врата"
       },
       x: 65, y: 70,
@@ -261,8 +261,8 @@ const GeometryHierarchy = () => {
         perimeter: 'L = 4a'
       },
       realWorld: {
-        // Window
-        img: "https://images.unsplash.com/photo-1501516095230-a96860dc6d45?auto=format&fit=crop&w=400&q=80",
+        // Window - Updated URL
+        img: "https://images.unsplash.com/photo-1502005229762-cf1b2da7c5d6?auto=format&fit=crop&w=400&q=80",
         label: "Прозорец"
       },
       x: 50, y: 90,
