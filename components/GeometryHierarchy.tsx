@@ -387,10 +387,10 @@ const GeometryHierarchy = () => {
 
   const renderLabPanel = () => {
     const w = 200, h = 140, centerX = w/2, centerY = h/2;
-    let svgPath = '', feedback = null, shapeName = '', targetName = '';
+    let svgPath = '', feedback = null, targetName = '';
 
     if (labExperiment === 'parallelogram') {
-      shapeName = 'Паралелограм'; targetName = 'Правоаголник';
+      targetName = 'Правоаголник';
       const radian = (labAngle * Math.PI) / 180;
       const height = 80, width = 100, skew = height / Math.tan(radian);
       const p1 = { x: centerX - width/2 + skew/2, y: centerY - height/2 };
@@ -400,7 +400,7 @@ const GeometryHierarchy = () => {
       svgPath = `M${p1.x},${p1.y} L${p2.x},${p2.y} L${p3.x},${p3.y} L${p4.x},${p4.y} Z`;
       if (labAngle >= 88 && labAngle <= 92) feedback = <div className="text-emerald-600 font-bold animate-pulse mt-2 flex items-center gap-1 justify-center"><CheckCircle size={16}/> Успех! Правоаголник.</div>;
     } else {
-      shapeName = 'Правоаголник'; targetName = 'Квадрат';
+      targetName = 'Квадрат';
       const height = 100, width = labWidth;
       const p1 = { x: centerX - width/2, y: centerY - height/2 };
       const p2 = { x: centerX + width/2, y: centerY - height/2 };
