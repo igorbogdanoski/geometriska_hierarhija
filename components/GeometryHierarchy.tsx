@@ -57,7 +57,10 @@ const GeometryHierarchy = () => {
 
   // Error handling for images
   const handleImageError = (e: React.SyntheticEvent<HTMLImageElement, Event>) => {
-    (e.target as HTMLElement).parentElement!.style.display = 'none';
+    // If image fails, try to show a placeholder or hide it gently
+    const target = e.target as HTMLImageElement;
+    target.style.opacity = '0.5'; // Dim it to show something is wrong but keep layout
+    console.error("Image failed to load:", target.src);
   };
 
   // --- DATA STRUCTURE ---
@@ -72,7 +75,8 @@ const GeometryHierarchy = () => {
         perimeter: 'L = a + b + c + d'
       },
       realWorld: {
-        img: "https://images.unsplash.com/photo-1598285514690-362c3f87b322?w=400&q=80",
+        // Nature/Land plot
+        img: "https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=400&q=80",
         label: "Парцела земјиште"
       },
       x: 50, y: 5,
@@ -92,7 +96,8 @@ const GeometryHierarchy = () => {
         perimeter: 'L = 2(a + b)'
       },
       realWorld: {
-        img: "https://images.unsplash.com/photo-1623842823611-665e7740f935?w=400&q=80",
+        // Kite flying
+        img: "https://images.unsplash.com/photo-1534685157159-d83279aa7601?auto=format&fit=crop&w=400&q=80",
         label: "Змеј за летање"
       },
       x: 20, y: 30,
@@ -119,7 +124,8 @@ const GeometryHierarchy = () => {
         perimeter: 'L = a + b + c + d'
       },
       realWorld: {
-        img: "https://images.unsplash.com/photo-1544816155-12df9643f363?w=400&q=80",
+        // Handbag shape
+        img: "https://images.unsplash.com/photo-1590874103328-3351a9f1a21e?auto=format&fit=crop&w=400&q=80",
         label: "Женска чанта"
       },
       x: 80, y: 30,
@@ -144,7 +150,8 @@ const GeometryHierarchy = () => {
         perimeter: 'L = 2(a + b)'
       },
       realWorld: {
-        img: "https://images.unsplash.com/photo-1506152983158-b4a74a01c721?w=400&q=80",
+        // Modern building architecture
+        img: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=400&q=80",
         label: "Модерна зграда"
       },
       x: 50, y: 50,
@@ -172,7 +179,8 @@ const GeometryHierarchy = () => {
         perimeter: 'L = a + b + 2c'
       },
       realWorld: {
-        img: "https://images.unsplash.com/photo-1459416248967-df44b4db2d12?w=400&q=80", 
+        // Flower pot
+        img: "https://images.unsplash.com/photo-1485955900006-10f4d324d411?auto=format&fit=crop&w=400&q=80", 
         label: "Саксија"
       },
       x: 90, y: 50,
@@ -199,7 +207,8 @@ const GeometryHierarchy = () => {
         perimeter: 'L = 4a'
       },
       realWorld: {
-        img: "https://images.unsplash.com/photo-1597587847952-6715f2e9644f?w=400&q=80",
+        // Traffic sign (diamond)
+        img: "https://images.unsplash.com/photo-1520690214124-2405c5217036?auto=format&fit=crop&w=400&q=80",
         label: "Сообраќаен знак"
       },
       x: 35, y: 70,
@@ -225,7 +234,8 @@ const GeometryHierarchy = () => {
         perimeter: 'L = 2(a + b)'
       },
       realWorld: {
-        img: "https://images.unsplash.com/photo-1513694203232-719a280e022f?w=400&q=80",
+        // Door
+        img: "https://images.unsplash.com/photo-1489171027722-cab6e80ceafd?auto=format&fit=crop&w=400&q=80",
         label: "Врата"
       },
       x: 65, y: 70,
@@ -251,7 +261,8 @@ const GeometryHierarchy = () => {
         perimeter: 'L = 4a'
       },
       realWorld: {
-        img: "https://images.unsplash.com/photo-1605117882932-f9e32b03ef3c?w=400&q=80",
+        // Window
+        img: "https://images.unsplash.com/photo-1501516095230-a96860dc6d45?auto=format&fit=crop&w=400&q=80",
         label: "Прозорец"
       },
       x: 50, y: 90,
